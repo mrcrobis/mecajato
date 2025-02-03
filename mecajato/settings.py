@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'clientes'
 ]
 
 MIDDLEWARE = [
@@ -105,7 +106,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'templates/static')
+
+# A virgula no valor da variavel abaixo faz com que o python interprete que há ou haverá outros valores dentro dessa variavel, fazendo a variavel retornar uma lista/tupla, caso contrario retornara uma variavel normal
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'),)
 STATIC_ROOT = os.path.join('static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
