@@ -61,12 +61,12 @@
       </div>
       
       <section class="home-section">
-          {% block dashboard %}
+          {% block 'dashboard' %}
           {% endblock %}
 
       </section>
 
-    {% block body %}
+    {% block 'body' %}
     {% endblock %}
     <script src="{% static 'general/js/base.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
