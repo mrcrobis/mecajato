@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # request = requisicao do usuario
 def clientes(request):
-    return HttpResponse('Cliente')
+    return render(request, 'clientes.html')
