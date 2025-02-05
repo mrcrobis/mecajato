@@ -15,11 +15,13 @@
             <div onclick="exibir_form('2')" class="col-md card-dashboard">
                 <p class="text-card">Atualizar clientes</p>
             </div> 
-
         </div>
 
             <div id="adicionar-cliente" class="adicionar-cliente">
-                <form action="{% url 'clientes' %}" method="POST">{% csrf_token %}
+                <form action="{% url 'clientes' %}" method="POST">
+
+                    {% csrf_token %}
+                    
                     <div class="row">
                         <div class="col-md">
                             <p>Nome:</p>
